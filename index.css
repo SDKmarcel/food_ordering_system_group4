@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-right: 5em;
+}
+
+
+.menu ul a{
+    text-decoration: none;
+    color: #f44313;
+    font-weight: bold;
+}
+
+.menu ul a:hover{
+    text-decoration: overline;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login{
+    text-decoration: none;
+    color: #f44313;
+    font-weight: bold;
+}
+
+
+.section-1{
+    height: 20em;
+    width: 100%;
+    background-color: #039acd;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.pizza-btn{
+   padding: 15px;
+   background-color: #f44313; 
+   color: white;
+   border: none;
+   border-radius: 5px;
+
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+.container {
+    position: sticky;
+    top: 0;
+}
+
+
+.search-food{
+    width: 280%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.search-food-btn{
+    padding: 10px;
+    background-color: #f44313;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+}
+
+
+.search-bar{
+    margin-left: 20em;
+}
+
+
+
+
+.section-2{
+    width: 100%;
+    height: 20rem;
+    margin-top: 10px;
+    padding-top: 3rem;
+    background-color: white;
+}
+
+
+.image-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px;
+    text-align: center;
+    font-weight: bold;
+    gap: 3em;
+    cursor: pointer;
+}
+
+
+
+.all-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 30em;
+    width: 100%;
+    background-color: #039acd;
+    outline: none; 
+    margin-top: 10em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90rem;
+}
+
+
+.developers{
+    position: relative;
+    top: 3rem;
+    left: 50rem;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+}
+
