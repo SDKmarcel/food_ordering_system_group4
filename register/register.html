@@ -25,7 +25,7 @@
         <div class="signdiv">
             <div class="sf">
                 <h1 class="signup" style="color: #f44313;">NEW USER REGISTRATION</h1>
-                <form action="login.html" method="GET" onsubmit="handleRegister(event)">
+                <form onsubmit="handleRegister(event)">
                     <div class="form-container">
                         <div>
                             <input type="text" name="user_name" id="user_name" required placeholder="Enter your name">
@@ -78,14 +78,15 @@
         });
 
         function handleRegister(event) {
+            event.preventDefault();
             let password = document.getElementById("password").value;
             let cpassword = document.getElementById("cpassword").value;
             if (password !== cpassword) {
-                event.preventDefault();
                 alert("Passwords do not match!");
-                return false;
+                return;
             }
             alert("Registration successful! Please login.");
+            window.location.href = "./login.html";
         }
     </script>
 </body>

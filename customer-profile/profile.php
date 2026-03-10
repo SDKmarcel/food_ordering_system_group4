@@ -38,7 +38,7 @@
 
         ?>
 
-            <p>Welcome, <?php echo $ $user_name ?></p>
+            <p>Welcome, <?php echo htmlspecialchars($user_name, ENT_QUOTES, 'UTF-8') ?></p>
             <a href="../register/login.html" class="login">Logout</a>
         </div>
 
@@ -65,7 +65,7 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Categories</a></li>
-                <li><a href="./profile.html">Foods</a></li>
+                <li><a href="../menu-bar/foods.html">Foods</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>

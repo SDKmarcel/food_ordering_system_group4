@@ -33,7 +33,7 @@
         <div class="signdiv">
             <div class="sf">
                 <h1 class="signup" style="color: #f44313;">LOGIN USER</h1>
-                <form action="../customer-profile/profile.html" method="GET" onsubmit="handleLogin(event)">
+                <form onsubmit="handleLogin(event)">
                     <div class="form-container">
                         <div>
                             <input type="text" name="user_name" required placeholder="Enter your user name">
@@ -58,7 +58,9 @@
 
     <script>
         function handleLogin(event) {
+            event.preventDefault();
             alert("Login successful! Welcome.");
+            window.location.href = "../customer-profile/profile.html";
         }
     </script>
 </body>

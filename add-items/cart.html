@@ -69,7 +69,7 @@
         let profile_dialog = document.getElementById("profile-dialog");
 
         profile_img.addEventListener("click", () => {
-            if (profile_dialog.style.display === "none") {
+            if (getComputedStyle(profile_dialog).display === "none") {
                 profile_dialog.style.display = "block";
             } else {
                 profile_dialog.style.display = "none";

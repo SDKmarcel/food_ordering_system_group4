@@ -15,7 +15,7 @@
            <img src="../src/payment.jpg" width="400px" style="border-radius: 10px;">  
         </div>
         <div>
-            <a href="../customer-profile/profile.php" onclick="pay()">Pay offline</a>
+            <a href="../customer-profile/profile.html" onclick="pay()">Pay offline</a>
         </div>
     </div>
 </body>

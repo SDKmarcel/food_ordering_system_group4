@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="logo">
-            <a href="index.php"><img src="../src/logo.png" alt="logo" width="50px"></a>
+            <a href="../index.html"><img src="../src/logo.png" alt="logo" width="50px"></a>
             <p>Welcome guest</p>
             <a href="./register/login.php" class="login">Logout</a>
         </div>
@@ -19,7 +19,7 @@
         <div class="menu menu-bar">
             <img src="img.jpg" class="profile-img" id="profile-img">
             <ul>
-                <li><a href="../index.php">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="../menu-bar/foods.html">Foods</a></li>
                 <li><a href="#">Contact</a></li>

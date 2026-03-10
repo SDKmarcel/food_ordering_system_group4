@@ -25,13 +25,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build static site
+        run: |
+          mkdir -p _site
+          # Copy HTML, CSS, and JS files preserving directory structure
+          find . \( -name "*.html" -o -name "*.css" -o -name "*.js" \) \
+            -not -path "./.git/*" -not -path "./_site/*" | while read f; do
+            mkdir -p "_site/$(dirname "$f")"
+            cp "$f" "_site/$f"
+          done
+          # Copy images and assets from src/
+          if [ -d "src" ]; then
+            cp -r src "_site/src"
+          fi
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
