@@ -22,7 +22,7 @@
 
     <div class="container">
         <div class="logo">
-            <a href="index.php"><img src="../src/logo.png" alt="logo" width="50px"></a>
+            <a href="../index.html"><img src="../src/logo.png" alt="logo" width="50px"></a>
 
 
         <?php
@@ -38,8 +38,8 @@
 
         ?>
 
-            <p>Welcome, <?php echo $ $user_name ?></p>
-            <a href="./register/login.php" class="login">Logout</a>
+            <p>Welcome, <?php echo htmlspecialchars($user_name, ENT_QUOTES, 'UTF-8') ?></p>
+            <a href="../register/login.html" class="login">Logout</a>
         </div>
 
 
@@ -63,9 +63,9 @@
         ?>
             
             <ul>
-                <li><a href="../index.php">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Categories</a></li>
-                <li><a href="../../food-order/customer-profile/profile.php">Foods</a></li>
+                <li><a href="../menu-bar/foods.html">Foods</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>

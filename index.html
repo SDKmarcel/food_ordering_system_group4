@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="./src/logo.png" alt="logo" width="50px"></a>
+            <p>Welcome guest</p>
+            <a href="./register/login.html" class="login">Login</a>
+        </div>
+
+        <div class="menu menu-bar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="./menu-bar/foods.html">Foods</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="logo-food">
+            <img src="./src/logo-food.png" alt="logo-food" width="340px">
+        </div>
+
+        <div class="search-bar">
+            <form action="" method="GET" autocomplete="off">
+                <input type="text" name="search-food" class="search-food search" placeholder="Search for food">
+                <input type="submit" value="Search" class="search-food-btn">
+            </form>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div>
+            <h1 style="text-align: center;">Explore Foods</h1>
+
+            <div class="image-section">
+                <div class="pic1">
+                    <img src="./src/banku.jpg" alt="banku" width="450px" style="border-radius: 15px;">
+                    <h2>Banku</h2>
+                    <p>Price: GH&#8373; 50</p> <br>
+                    <a href="./add-items/cart.html" class="pizza-btn" onclick="pics()">Add to cart</a>
+                </div>
+
+                <div class="pic2">
+                    <img src="./src/fufu.jpg" alt="fufu" width="450px" style="border-radius: 15px;">
+                    <h2>Fufu Special</h2>
+                    <p>Price: GH&#8373; 70</p> <br>
+                    <a href="./add-items/cart.html" class="pizza-btn" onclick="pics()">Add to cart</a>
+                </div>
+
+                <div class="pic3">
+                    <img src="./src/jollof_rice.jpg" alt="jollof rice" width="400px" style="border-radius: 15px;">
+                    <h2>Jollof Rice</h2>
+                    <p>Price: GH&#8373; 120</p> <br>
+                    <a href="./add-items/cart.html" class="pizza-btn" onclick="pics()">Add to cart</a>
+                </div>
+
+                <div class="pic4">
+                    <img src="./src/kenkey.jpg" alt="kenkey" width="350px" style="border-radius: 15px;">
+                    <h2>Kenkey</h2>
+                    <p>Price: GH&#8373; 40</p> <br>
+                    <a href="./add-items/cart.html" class="pizza-btn" onclick="pics()">Add to cart</a>
+                </div>
+
+                <div class="pic5">
+                    <img src="./src/pizza.jpg" alt="pizza" width="450px" style="border-radius: 15px;">
+                    <h2>Pizza</h2>
+                    <p>Price: GH&#8373; 300</p> <br>
+                    <a href="./add-items/cart.html" class="pizza-btn" onclick="pics()">Add to cart</a>
+                </div>
+
+                <div class="pic6">
+                    <img src="./src/rice_and_stew.png" alt="rice and stew" width="450px" style="border-radius: 15px;">
+                    <h2>Plain Rice</h2>
+                    <p>Price: GH&#8373; 100</p> <br>
+                    <a href="./add-items/cart.html" class="pizza-btn" onclick="pics()">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="all-footer">
+        <div class="footer-logo">
+            <img src="./src/logo.png" alt="logo" width="200px" onclick="location.href='#'" style="cursor: pointer;">
+        </div>
+
+        <div class="academic-programs">
+            <h1 style="color: #ffffffff;">Explore Foods</h1>
+            <p>Pizza</p>
+            <p>Rice And Chicken</p>
+            <p>Banku And Tilapia</p>
+            <p>Fufu And Light Soup</p>
+        </div>
+
+        <div class="quick-links">
+            <h1 style="color: #ffffffff;">Quick Links</h1>
+            <p>Categories</p>
+            <p>Foods</p>
+            <p>Contact</p>
+            <p>Delivery is within 10min - 15mins</p>
+        </div>
+
+        <div class="Contact">
+            <h1 style="color: #ffffffff;">Contact</h1>
+            <p>kstu.2a.group4.com</p>
+            <p>+233 544826092/ +233 547179028 <br> +233 592878299 / +233 530122890 <br> +233 535604971 / +233 597774211 <br> +233 539022967</p>
+        </div>
+
+        <div class="developers">
+            <div>&copy; Copyright 2026 &lt;&lt; Osei Kofi Prince</div>
+            <div><p>This site was developed by GROUP 4</p></div>
+        </div>
+    </footer>
+
+    <script>
+        const pics = () => {
+            alert("Cart added successfully!");
+        }
+    </script>
+</body>
+</html>

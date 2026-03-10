@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <link rel="stylesheet" href="menu-profile.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="container">
+        <div class="logo">
+            <a href="../index.html"><img src="../src/logo.png" alt="logo" width="50px"></a>
+            <p>Welcome, Guest</p>
+            <a href="../register/login.html" class="login">Logout</a>
+        </div>
+
+        <div class="menu menu-bar">
+            <img src="../src/logo.png" class="profile-img" id="profile-img" style="border-radius:50%;">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="../menu-bar/foods.html">Foods</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile-dialog" id="profile-dialog">
+        <p class="email">guest@example.com</p>
+        <hr>
+        <a href="#" class="account" style="text-decoration: none; color: black">Profile &amp; account</a>
+        <hr>
+        <a href="../register/login.html" style="text-decoration: none; color: black" class="out">Sign Out</a>
+    </div>
+
+    <h1 style="text-align: center; margin-top: 3rem;">You have zero pending orders</h1>
+
+    <script>
+        let profile_img = document.getElementById("profile-img");
+        let profile_dialog = document.getElementById("profile-dialog");
+
+        profile_img.addEventListener("click", () => {
+            if (getComputedStyle(profile_dialog).display === "none") {
+                profile_dialog.style.display = "block";
+            } else {
+                profile_dialog.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
