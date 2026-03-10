@@ -1,0 +1,179 @@
+body {
+    background-color: #f1f2f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px 0;
+    min-height: 100vh;
+}
+
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin-right: 5em;
+}
+
+
+.menu ul a{
+    text-decoration: none;
+    color: #f44313;
+    font-weight: bold;
+}
+
+.menu ul a:hover{
+    text-decoration: overline;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.login{
+    text-decoration: none;
+    color: #f44313;
+    font-weight: bold;
+}
+
+
+.menu-bar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.profile-dialog{
+    height: 170px;
+    width: 300px;
+    background-color: white;
+    line-height: 3em;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 85em;
+    box-shadow: 0 1px 1px 1px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    gap: 15px;
+    display: none;
+}
+
+
+
+.menu-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2d3436;
+}
+
+.price {
+    font-weight: bold;
+    margin: 5px 0;
+    color: #2d3436;
+}
+
+.description {
+    font-size: 13px;
+    color: #636e72;
+    margin-bottom: 12px;
+}
+
+.btn {
+    background-color: #ff7675;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.see-all {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.see-all a {
+    color: #ff7675;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+.foods-footer-container{
+    height: 50px;
+    width: 100%;
+    background-color: #636e72;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 15rem;
+}
+
+
