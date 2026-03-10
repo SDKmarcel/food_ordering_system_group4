@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="#">Categories</a></li>
-                <li><a href="../../food-order/menu-bar/foods.php">Foods</a></li>
+                <li><a href="../menu-bar/foods.html">Foods</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>

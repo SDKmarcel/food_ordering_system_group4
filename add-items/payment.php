@@ -12,10 +12,10 @@
 
     <div class="container">
         <div>
-           <img src="../../food-order/src/payment.jpg" width="400px" style="border-radius: 10px;">  
+           <img src="../src/payment.jpg" width="400px" style="border-radius: 10px;">  
         </div>
         <div>
-            <a href="../../food-order/customer-profile/profile.php" onclick="pay()">Pay offline</a>
+            <a href="../customer-profile/profile.php" onclick="pay()">Pay offline</a>
         </div>
     </div>
 </body>

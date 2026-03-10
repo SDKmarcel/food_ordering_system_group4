@@ -8,8 +8,8 @@
 </head>
 <body>
 
-            <div class="footer-logo">
-            <img src="./src/logo.png" alt="logo" width="200px" onclick="location.href='#'" style="cursor: pointer;">
+        <div class="footer-logo">
+            <img src="../src/logo.png" alt="logo" width="200px" onclick="location.href='#'" style="cursor: pointer;">
         </div>
 
         <div class="academic-programs">

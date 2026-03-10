@@ -67,7 +67,7 @@
                             </div>
                             
                             <div>
-                                <p>Don't have an account? <a href="./register.php" style="text-align:center; ">Create account</a></p>
+                                <p>Don't have an account? <a href="./register.html" style="text-align:center; ">Create account</a></p>
                      </div>
                             
                 </form>

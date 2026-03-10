@@ -72,7 +72,7 @@
                             </div>
                             <hr>
                             <div>
-                                <p>Already have an account? <a href="./login.php" style="text-align:center;">Login</a></p>
+                                <p>Already have an account? <a href="./login.html" style="text-align:center;">Login</a></p>
                      </div>
                             
                 </form>

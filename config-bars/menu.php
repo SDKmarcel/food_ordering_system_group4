@@ -9,16 +9,16 @@
 <body>
     <div class="container">
         <div class="logo">
-            <a href="index.php"><img src="./src/logo.png" alt="logo" width="50px"></a>
+            <a href="../index.html"><img src="../src/logo.png" alt="logo" width="50px"></a>
             <p>Welcome guest</p>
-            <a href="./register/login.php" class="login">Login</a>
+            <a href="../register/login.html" class="login">Login</a>
         </div>
 
         <div class="menu menu-bar">
             <ul>
-                <li><a href="../food-order/index.php">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Categories</a></li>
-                 <li><a href="../../food-order/menu-bar/foods.php">Foods</a></li>
+                <li><a href="../menu-bar/foods.html">Foods</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>

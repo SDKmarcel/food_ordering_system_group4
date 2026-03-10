@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - New User</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joindiv">
+            <div class="circlediv">
+                <div class="cir1"></div>
+            </div>
+            <div class="ja">
+                <div class="jc">
+                    <div class="join">NEW USER</div>
+                    <div class="account">Create an account to get started.</div>
+                </div>
+            </div>
+            <div class="circlediv">
+                <div class="cir2"></div>
+            </div>
+        </div>
+        <div class="signdiv">
+            <div class="sf">
+                <h1 class="signup" style="color: #f44313;">NEW USER REGISTRATION</h1>
+                <form action="login.html" method="GET" onsubmit="handleRegister(event)">
+                    <div class="form-container">
+                        <div>
+                            <input type="text" name="user_name" id="user_name" required placeholder="Enter your name">
+                        </div>
+
+                        <div>
+                            <input type="email" name="email" id="email" required placeholder="Enter your email address">
+                        </div>
+
+                        <div class="upload-img">
+                            <img src="../src/logo.png" id="register-img" class="register-img">
+                        </div>
+
+                        <div class="upload-img">
+                            <label for="user_image" class="upload" style="cursor: pointer;">Upload Your Pic</label> <br>
+                            <input type="file" name="user_image" id="user_image" style="display: none;">
+                        </div>
+
+                        <div>
+                            <input type="password" name="password" required id="password" placeholder="Enter password">
+                        </div>
+
+                        <div>
+                            <input type="password" name="cpassword" required id="cpassword" placeholder="Confirm password">
+                        </div>
+
+                        <div>
+                            <input type="text" name="contact" id="contact" required placeholder="Enter your mobile number">
+                        </div>
+
+                        <div>
+                            <button style="cursor: pointer; border: none" name="submit" id="signup-btn" class="signupm">Signup</button>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Already have an account? <a href="./login.html" style="text-align:center;">Login</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let register_img = document.getElementById("register-img");
+        let user_image = document.getElementById("user_image");
+
+        user_image.addEventListener("change", () => {
+            register_img.src = URL.createObjectURL(user_image.files[0]);
+        });
+
+        function handleRegister(event) {
+            let password = document.getElementById("password").value;
+            let cpassword = document.getElementById("cpassword").value;
+            if (password !== cpassword) {
+                event.preventDefault();
+                alert("Passwords do not match!");
+                return false;
+            }
+            alert("Registration successful! Please login.");
+        }
+    </script>
+</body>
+</html>
